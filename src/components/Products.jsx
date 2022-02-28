@@ -5,9 +5,11 @@ import ProductItem from './ProductItem';
 
 const Container = styled.div`
     width: 100%;
-    padding: 20px;
+    padding: 20px 10px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 `;
 
 const Products = () => {

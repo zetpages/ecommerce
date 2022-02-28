@@ -5,6 +5,10 @@ import { FavoriteBorderOutlined, SearchOutlined, ShoppingCartOutlined } from '@m
 const Container = styled.div`
     flex: 1;
     margin: 10px;
+    min-width: 300px;
+    max-width: 300px;
+    height: 550px;
+    overflow: hidden;
 `;
 
 const Circle = styled.div`
@@ -12,7 +16,9 @@ const Circle = styled.div`
 `;
 
 const Image = styled.img`
-    
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
 `
 
 const Info = styled.div``;
