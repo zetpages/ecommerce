@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowLeftOutlined, ArrowRightOutlined } from '@material-ui/icons';
+import { ArrowLeftOutlined, ArrowRightOutlined, FilterVintageOutlined } from '@material-ui/icons';
 import styled from 'styled-components';
 import { sliderItems } from '../data';
 
@@ -85,7 +85,14 @@ const Button = styled.button`
     font-size: 20px;
     background: transparent;
     border: 1px solid darkgray;
+    display: flex;
+    align-items: center;
     cursor: pointer;
+
+    & > svg {
+        margin-right: 5px;
+        color: #eb8f90;
+    }
 `;
 
 const Slider = () => {
@@ -112,7 +119,10 @@ const Slider = () => {
                         <InfoContainer>
                             <Title>{item.title}</Title>
                             <Desc>{item.desc}</Desc>
-                            <Button>Shop now</Button>
+                            <Button>
+                                <FilterVintageOutlined />
+                                Shop now
+                            </Button>
                         </InfoContainer>
                     </Slide>
                 ))}

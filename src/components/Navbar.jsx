@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Search, ShoppingCartOutlined } from '@material-ui/icons';
+import { Search, ShoppingCartOutlined, Spa } from '@material-ui/icons';
 import { Badge } from '@material-ui/core';
 
 const Container = styled.div`
@@ -37,6 +37,7 @@ const SearchContainer = styled.div`
     padding: 4px 10px;
 
     & > svg {
+        cursor: pointer;
         fill: lightgray;
     }
 `;
@@ -52,7 +53,20 @@ const Input = styled.input`
 
 const Center = styled.div`
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+`;
+
+const LogoContainer = styled.div`
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+
+    & > svg {
+        color: #e9424a;
+    }
 `;
 
 const Logo = styled.h1`
@@ -87,7 +101,10 @@ const Navbar = () => {
                     </SearchContainer>
                 </Left>
                 <Center>
-                    <Logo>Joma.</Logo>
+                    <LogoContainer>
+                        <Spa />
+                        <Logo>floret</Logo>
+                    </LogoContainer>
                 </Center>
                 <Right>
                     <MenuItem>Register</MenuItem>

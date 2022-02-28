@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar';
 import Products from '../components/Products';
 import Slider from '../components/Slider';
 import styled from 'styled-components';
+import Newsletter from '../components/Newsletter';
 
 
 const Wrapper = styled.div`
@@ -19,6 +20,7 @@ const Home = () => {
             <Slider />
             <Categories />
             <Products />
+            <Newsletter />
         </Wrapper>
     )
 }
