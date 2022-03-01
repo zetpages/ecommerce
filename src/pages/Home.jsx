@@ -6,6 +6,7 @@ import Products from '../components/Products';
 import Slider from '../components/Slider';
 import styled from 'styled-components';
 import Newsletter from '../components/Newsletter';
+import Footer from '../components/Footer';
 
 
 const Wrapper = styled.div`
@@ -21,6 +22,7 @@ const Home = () => {
             <Categories />
             <Products />
             <Newsletter />
+            <Footer />
         </Wrapper>
     )
 }
