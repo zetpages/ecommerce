@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { ArrowLeftOutlined, ArrowRightOutlined, FilterVintageOutlined } from '@material-ui/icons';
 import styled from 'styled-components';
 import { sliderItems } from '../data';
+import { mobile } from '../responsive';
 
 
 const Container = styled.div`
@@ -10,6 +11,8 @@ const Container = styled.div`
     display: flex;
     position: relative;
     overflow-x: hidden;
+
+    ${mobile({ height: "40vh" })};
 `;
 
 const Arrow = styled.div`
@@ -33,6 +36,8 @@ const Arrow = styled.div`
     & > svg {
         color: gray;
     }
+
+    ${mobile({ width: "40px", height: "40px" })};
 `;
 
 const Wrapper = styled.div`
@@ -55,6 +60,8 @@ const ImgContainer = styled.div`
     width: 100%;
     height: 100%;
     overflow: hidden;
+
+    ${mobile({ display: "none" })};
 `;
 
 const Image = styled.img`
@@ -70,6 +77,8 @@ const InfoContainer = styled.div`
 
 const Title = styled.h1`
     font-size: 70px;
+
+    ${mobile({ fontSize: "24px" })};
 `;
 
 const Desc = styled.p`
@@ -77,6 +86,8 @@ const Desc = styled.p`
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 2px;
+
+    ${mobile({ fontSize: "14px", margin: "25px 10px" })};
 `;
 
 const Button = styled.button`
@@ -93,6 +104,8 @@ const Button = styled.button`
         margin-right: 5px;
         color: #eb8f90;
     }
+
+    ${mobile({ padding: "5px 10px", fontSize: "16px" })};
 `;
 
 const Slider = () => {

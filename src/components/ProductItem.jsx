@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FavoriteBorderOutlined, SearchOutlined, ShoppingCartOutlined } from '@material-ui/icons';
+import { mobile } from '../responsive';
 
 const Info = styled.div`
     width: 100%;
@@ -43,6 +44,8 @@ const Container = styled.div`
         transform: scale(1.1);
         transition: all .3s ease;
     }
+
+    ${mobile({ minWidth: "100%", height: "350px" })};
 `;
 
 const Icon = styled.div`

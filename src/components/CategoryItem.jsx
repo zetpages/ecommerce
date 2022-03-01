@@ -1,9 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import { LocalFloristOutlined } from '@material-ui/icons';
+import { mobile } from '../responsive';
 
 const Container = styled.div`
     flex: 1;
+    width: 100%;
     margin: 10px;
     height: 70vh;
     position: relative;
@@ -13,6 +15,8 @@ const Image = styled.img`
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+    ${mobile({ height: "25vh" })};
 `;
 const Info = styled.div`
     position: absolute;
@@ -29,6 +33,8 @@ const Info = styled.div`
 const Title = styled.h1`
     color: #fff;
     margin-bottom: 20px;
+
+    ${mobile({ fontSize: "24px" })};
 `;
 const Button = styled.button`
     border: 1px solid #fff;

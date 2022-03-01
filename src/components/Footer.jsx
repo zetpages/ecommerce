@@ -1,12 +1,15 @@
 import { Facebook, Instagram, Pinterest, Twitter, Spa, Room, Phone, MailOutline } from '@material-ui/icons';
 import React from 'react';
 import styled from 'styled-components';
+import { mobile } from '../responsive';
 
 
 const Container = styled.div`
     display: flex;
     width: 100%;
     padding: 60px 10px 50px 10px;
+
+    ${mobile({ flexDirection: "column" })};
 `;
 
 const Left = styled.div`
