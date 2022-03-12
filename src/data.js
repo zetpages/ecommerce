@@ -28,16 +28,19 @@ export const categories = [
         // img: "https://images.unsplash.com/photo-1463154545680-d59320fd685d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=675&q=80",
         img: "https://images.unsplash.com/photo-1570077168161-11abff126201?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
         title: "SHIRT STYLE!",
+        cat: "women"
     },
     {
         id: 2,
         img: "https://images.unsplash.com/photo-1502810365585-56ffa361fdde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
         title: "LOUNGEWEAR LOVE",
+        cat: "coat"
     },
     {
         id: 3,
         img: "https://images.unsplash.com/photo-1555015740-9f3a24020641?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=711&q=80",
         title: "LIGHT JACKETS",
+        cat: "jeans"
     },
 ];
 

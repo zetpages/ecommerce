@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { LocalFloristOutlined } from '@material-ui/icons';
 import { mobile } from '../responsive';
+import { Link } from 'react-router-dom';
 
 const Container = styled.div`
     flex: 1;
@@ -56,15 +57,16 @@ const Button = styled.button`
 const CategoryItem = ({ item }) => {
     return (
         <Container>
-            <Image src={item.img} />
-            <Info>
-                <Title>{item.title}</Title>
-                <Button>
-                    <LocalFloristOutlined />
-                    Shop now
-                </Button>
-            </Info>
-
+            <Link to={`/products/${item.cat}`}>
+                <Image src={item.img} />
+                <Info>
+                    <Title>{item.title}</Title>
+                    <Button>
+                        <LocalFloristOutlined />
+                        Shop now
+                    </Button>
+                </Info>
+            </Link>
         </Container>
     )
 }
